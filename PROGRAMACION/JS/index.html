@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos de Javascript</title>
+</head>
+
+<body>
+  <h1>Fundamentos Javascript </h1>
+</body>
+
+
+<script>
+  /*
+  // var: tiene alcance global en el documento.
+  var hola = "Extraño mi princess"
+  // let: tiene alcance especifico.
+  let hello = "Jejejej"
+  console.log(hola);
+  console.log(hello);
+  console.log(window);
+  console.log(window.hola);
+  console.log(window.hello);
+
+
+  // Esto es un bloque - comentario de una linea
+   Esto 
+  es un 
+  coment
+  largo jeje
+  
+  console.log("***************var GLOBAL***************");
+  var musica = "rock";
+  console.log("Variable Musica antes del bloque", musica);
+  {
+    var musica = "Pop"
+    console.log("variable musica dentro del bloque", musica);
+  }
+  console.log("Variable Musica antes del bloque", musica);
+  console.log("***********let BLOQUE*************");
+  let musica2 = "rock";
+  console.log("Variable Musica antes del bloque", musica2);
+  {
+    let musica2 = "Pop"
+    console.log("variable musica dentro del bloque", musica2);
+  }
+  console.log("Variable Musica antes del bloque", musica2);
+
+  //CLASE 26 Objeto console
+
+  // console.log(console);
+
+  console.error("Esto es un ERROR");
+  console.warn("Esto es un aviso");
+  console.info("Esto es mensaje informativo");
+  console.log("Registro de lo que ha pasado en la aplicacion");
+
+  let = nombre = "Nestor",
+    apellido = "Martos",
+    edad = 32;
+
+  console.log(nombre);
+  console.log(apellido);
+  console.log(edad);
+  console.log(nombre, apellido, edad);
+  console.log(`Hola mi nombre es ${nombre} ${apellido} y tengo ${edad} años`);
+
+  console.log(`Hola mi nombre es %s %s y tengo %d años`, nombre, apellido, edad);
+
+  console.log(window);
+  console.log(document);
+  console.dir(window);
+  console.dir(document);
+
+  console.clear();
+
+  console.group();
+  console.log("log 1");
+  console.log("log 2");
+  console.log("log 3");
+  console.log("log 4");
+  console.log("log 5");
+  console.log("log 6");
+  console.log("log 7");
+  console.groupEnd();
+
+  console.groupCollapsed();
+  console.log("log 1");
+  console.log("log 2");
+  console.log("log 3");
+  console.log("log 4");
+  console.log("log 5");
+  console.log("log 6");
+  console.log("log 7");
+  console.groupEnd();
+
+
+  console.log(console);
+  console.table(Object.entries(console).sort());
+
+  const numeros = [1, 2, 3, 4, 5],
+    vocales = ["a", "e", "i", "o", "u"];
+
+  console.table(numeros, vocales);
+  console.table(vocales);
+  const perro = { nombre: "CHopin", raza: "Schnauzer", color: "plata" };
+
+  console.table(perro);
+  
+
+
+  console.time("cuanto tiempo tarda mi codigo");
+  const arreglo = Array(1000);
+
+  for (let i = 0; i < arreglo.length; i++) {
+    arreglo[i] = i;
+  }
+
+  console.timeEnd("cuanto tiempo tarda mi codigo");
+
+  for (let i = 0; i <= 10; i++) {
+    console.count("codigo for");
+    console.log(i)
+  }
+
+  let x = 3,
+    y = 2,
+    pruebaXY = "Se espera que X sea menor que Y";
+
+  console.assert(x < y, { pruebaXY });
+*/
+
+  //27 constructor DATE
+
+  /*   console.log(Date());
+  
+    let fecha = new Date();
+    console.log(fecha);
+    console.log(fecha.getDate());
+    console.log(fecha.getDay());
+    console.log(fecha.getMonth());
+    console.log(fecha.getFullYear());
+  
+    console.log(fecha.getHours());
+    console.log(fecha.getMinutes());
+    console.log(fecha.getSeconds());
+    console.log(fecha.getMilliseconds());
+    console.log(fecha.toString());
+    console.log(fecha.toDateString());
+    console.log(fecha.toLocaleString());
+    console.log(fecha.toLocaleDateString());
+    console.log(fecha.toLocaleTimeString());
+    console.log(fecha.getTimezoneOffset());
+    console.log(fecha.getUTCDate());
+    console.log(fecha.getUTCHours());
+    console.log(Date.now()); //Timestamp
+    let cumpleNes = new Date(1989, 9, 5);
+    console.log(cumpleNes); */
+
+  /*   console.log("Hola Mundo");
+    console.clear(); */
+
+  // 28 Objeto Math
+
+  /*   console.log(Math);
+    console.log(Math.PI);
+    console.log(Math.abs(-7.8));
+    console.log(Math.ceil(7.8));
+    console.log(Math.floor(7.8));
+    console.log(Math.round(7.2));
+    console.log(Math.round(7.6));
+    console.log(Math.sqrt(9));
+    //Elevar potencia
+    console.log(Math.pow(2, 4));
+    //Indicador de positivo cero o negativo
+    console.log(Math.sign(5)); //El valor es -1, 0, 1
+    console.log(Math.random());
+    console.log(Math.random() * 1000);
+    console.log(Math.round(Math.random() * 1000));
+   */
+
+  //29 Operador de cortocircuito
+
+  /* Cotocircuito OR - cuando el valor de la izquierda da true se tomara ese valor */
+
+  /* function saludar(nombre) {
+    console.log(`Hola ${nombre}`)
+  }
+
+  saludar("Nes");
+  saludar();
+
+  console.log("Cadena" || "Valor de derecha");
+  console.log(19 || "Valor de derecha");
+  console.log(true || "Valor de derecha");
+  console.log({} || "Valor de derecha");
+  console.log([] || "Valor de derecha");
+  console.log([] || "Valor de derecha");
+  console.log(-2 || "Valor de derecha");
+  console.log(0 || "Valor de derecha");
+  // Cotocircuito AND - cuando el valor de la izquierda da false se tomara ese valor 
+  console.log("BARRA SEPARADORA------------------");
+  console.log("Cadena" && "Valor de derecha");
+  console.log(19 && "Valor de derecha");
+  console.log(true && "Valor de derecha");
+  console.log({} && "Valor de derecha");
+  console.log([] && "Valor de derecha");
+  console.log([] && "Valor de derecha");
+  console.log(-2 && "Valor de derecha");
+  console.log(0 && "Valor de derecha");
+
+ */
+
+  //30 Alert, corfirm y prompt INTERACTUAR USUARIO
+
+  /* console.log(window);
+  window.alert("Hola alerta");
+  window.confirm("Hola confirmar");
+  window.prompt("Hola prompt es para ingresar valor"); 
+
+  alert("Hola alerta");
+  confirm("Hola confirmar");
+  prompt("Hola prompt es para ingresar valor");
+
+
+  let alerta = alert("Hola alerta");
+  let confirmacion = confirm("Hola confirmar");
+  let aviso = prompt("Hola prompt es aviso para ingresar valor");
+
+  console.log(alerta);
+  console.log(confirmacion);
+  console.log(aviso);
+
+
+  //31 Expresiones regulares Para busqueda
+
+  console.log(expReg.test(cadena));
+  console.log(expReg.exec(cadena));
+
+
+  let cadena = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, ipsum? Quasi incidunt dolorem dicta dolore! Hic nostrum reiciendis accusantium quisquam harum architecto! Dolores officiis numquam, corrupti fugiat ad esse voluptatibus lorem?"
+
+  //Expresion regular
+  //let expReg = new RegExp("lorem", "ig");
+
+  //Ejecucion de busqueda
+  let expReg2 = /lorem{1}/ig;
+  console.log(expReg2.test(cadena));
+  console.log(expReg2.exec(cadena));
+
+
+  //32 Funciones anonimas autoejecutables
+
+  //Funcion anonima autoejecutable
+
+  (function () {
+    console.log("Mi primer IIFE funcion anonima autoejecutada");
+  })();
+
+  (function (d, w, c) {
+    console.log("Mi segunda IIFE funcion anonima autoejecutada");
+    console.log(d);
+    console.log(w);
+    c.log("este es un console.log");
+  })(document, window, console);
+
+  //Version clasica
+  (function () {
+    console.log("Version clasica");
+  })();
+
+  //Version Crockford
+  ((function () {
+    console.log("Version Crockford");
+  })());
+
+  //Version Unaria
+  +function () {
+    console.log("Version Unaria");
+  }();
+
+  //Version Facebook
+  !function () {
+    console.log("Version Facebook");
+  }();
+*/
+
+  //33 Modulos (import export)
+
+  //Continua en Modulos.html  y modulos.js
+
+  console.log(".http Finalizado");
+
+</script>
+
+</html>
